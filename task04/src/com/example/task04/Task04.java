@@ -4,9 +4,18 @@ public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        float af = ((float) a);
+        float bf = ((float) b);
 
-        return 0;
+        if (operation.equals("+"))
+            return af + bf;
+        if (operation.equals("-"))
+            return af - bf;
+        if (operation.equals("*"))
+            return  af * bf;
+        if (operation.equals("/"))
+            return  af / bf;
+        return 0.0f;
     }
 
     public static void main(String[] args) {
