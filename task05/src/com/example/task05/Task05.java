@@ -4,9 +4,12 @@ public class Task05 {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        for (; x != 0; x/=10) {
+            if (x%2 == 1)
+                return "FALSE";
+        }
 
-        return "FALSE";
+        return "TRUE";
     }
 
     public static void main(String[] args) {
