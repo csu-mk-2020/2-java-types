@@ -4,18 +4,22 @@ public class Task02 {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        String[] names = new String[]{"byte", "short", "int", "long"};
+        Class[] classes = new Class[]{Byte.class, Short.class, Integer.class, Long.class};
 
-        return "";
+        for (int i = 0; i < names.length; i++) {
+            try {
+                Number num = (Number) classes[i].getConstructor(new Class[]{String.class}).newInstance(input);
+                return names[i];
+            } catch (Exception exception){
+
+            }
+        }
+        return "unknown";
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
-        System.out.println(result);
-         */
+
     }
 
 }
