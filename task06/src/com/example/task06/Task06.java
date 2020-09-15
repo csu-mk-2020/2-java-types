@@ -4,18 +4,13 @@ public class Task06 {
 
     public static int solution(int x, int y) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        String tmp = Integer.toString(x + y);
+        return tmp.startsWith("-") ? tmp.length() - 1 : tmp.length();
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int result = solution(12, 34);
-        System.out.println(result);
-        */
+//        int result = solution(-0, +0);
+//        System.out.println(result);
     }
 
 }
