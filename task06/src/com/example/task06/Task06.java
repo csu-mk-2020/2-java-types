@@ -5,8 +5,12 @@ public class Task06 {
     public static int solution(int x, int y) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int count = 0;
+        for (int sum = Math.abs(x + y); sum != 0; sum /= 10, ++count);
+        if (count == 0)
+            ++count;
+        return count;
 
-        return 0;
     }
 
     public static void main(String[] args) {
