@@ -4,7 +4,8 @@ public class Task13 {
 
     public static char toUpperCase(char c) {
 
-        // TODO привести букву к верхнему регистру
+        if(c >= 0x61 && c <= 0x7a)
+            c-=0x20;
 
         return c;
     }
