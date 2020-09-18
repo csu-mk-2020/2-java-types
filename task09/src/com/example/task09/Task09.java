@@ -8,7 +8,7 @@ public class Task09 {
         float a = 1.0f;
         float b = 3.0f;
         float c = 1.0e9f;
-        double x = (a / b - 1.0 / 3.0) * c;
+        double x = (((double) a) / ((double) b) - 1.0d / 3.0d) * ((double) c);
 
         return x;
     }
