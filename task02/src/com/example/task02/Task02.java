@@ -4,18 +4,39 @@ public class Task02 {
 
     public static String solution(String input) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        try{
+            byte num = new Byte(input);
+            return "byte";
+        } catch (NumberFormatException exception){
 
-        return "";
+        }
+
+        try {
+            short num = new Short(input);
+            return "short";
+        } catch (NumberFormatException exception){
+
+        }
+
+        try {
+            int num = new Integer(input);
+            return "int";
+        } catch (NumberFormatException exception){
+
+        }
+
+        try {
+            long num = new Long(input);
+            return "long";
+        } catch (NumberFormatException exception){
+
+        }
+
+        return "unknown";
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        String result = solution("12345");
-        System.out.println(result);
-         */
+
     }
 
 }
