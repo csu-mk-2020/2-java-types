@@ -7,7 +7,7 @@ public class Task14 {
 
         // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
 
-        return 0;
+        return new Integer(new StringBuilder(Integer.toString(value)).reverse().toString());
     }
 
     public static void main(String[] args) {
