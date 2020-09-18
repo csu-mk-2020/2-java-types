@@ -1,12 +1,26 @@
 package com.example.task05;
 
 public class Task05 {
-
     public static String solution(int x) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        int temp = 0;
+        int ch=0,ch1=0;
+        if (x == 0){
+            ch++;
+        }
+        while (x != 0){
+            temp = x % 10;
+            if (temp % 2 == 0){
+                ch++;
+            }else {
+                ch1++;
+            }
+            x = x /10;
+        }
+        if (ch > 0 && ch1 <= 0){
+            return "TRUE";
+        }
+        else
+            return "FALSE";
     }
 
     public static void main(String[] args) {
