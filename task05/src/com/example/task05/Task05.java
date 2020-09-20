@@ -5,8 +5,16 @@ public class Task05 {
     public static String solution(int x) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int div = x;
+        int mod;
 
-        return "FALSE";
+        while(div > 0){
+            mod = div%10;
+            if(mod%2 != 0) return "FALSE";
+            div /= 10;
+        }
+
+        return "TRUE";
     }
 
     public static void main(String[] args) {
