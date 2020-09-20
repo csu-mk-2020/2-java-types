@@ -5,8 +5,11 @@ public class Task06 {
     public static int solution(int x, int y) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        int res = x+y;
+        int count = 0;
+        for ( ; res != 0 ; res /= 10) ++count;
+        if(count == 0) return 1;
+        return count;
     }
 
     public static void main(String[] args) {
