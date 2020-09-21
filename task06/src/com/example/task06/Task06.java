@@ -6,7 +6,13 @@ public class Task06 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        int sum = x + y;
+        String strSum = String.valueOf(sum);
+        int res = strSum.length();
+        if(strSum.charAt(0) == '-'){
+            res -= 1;
+        }
+        return res;
     }
 
     public static void main(String[] args) {
