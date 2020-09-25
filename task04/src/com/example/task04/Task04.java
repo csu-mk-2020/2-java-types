@@ -6,10 +6,10 @@ public class Task04 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
         float res = 0;
-        if(operation == "+") res = (float)a+b;
-        else if(operation == "-") res = (float)a-b;
-        else if(operation == "*") res = (float)a*b;
-        else if(operation == "/") res = (float)a/b;
+        if(operation.equals("+")) res = (float)a+b;
+        else if(operation.equals("-")) res = (float)a-b;
+        else if(operation.equals("*")) res = (float)a*b;
+        else if(operation .equals("/")) res = (float)a/b;
 
         return res;
     }
