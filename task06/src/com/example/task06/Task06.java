@@ -6,7 +6,15 @@ public class Task06 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        int result = x + y;
+        int count = 0;
+        if (result == 0)
+            count++;
+        while (result != 0) {
+            count++;
+            result /= 10;
+        }
+        return count;
     }
 
     public static void main(String[] args) {
