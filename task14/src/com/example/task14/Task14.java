@@ -7,7 +7,12 @@ public class Task14 {
 
         // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
 
-        return 0;
+        int new_value = 0;
+        while (value > 0) {
+            new_value = 10 * new_value + value % 10;
+            value /= 10;
+        }
+        return new_value;
     }
 
     public static void main(String[] args) {
